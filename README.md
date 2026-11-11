@@ -1,8 +1,7 @@
-# Bug-Fixing Assignment 2: The MVC Pattern - Campus Canteen
+# Campus Canteen
 
-Welcome to your second bug-fixing assignment! This time the program is built
-with the **Model-View-Controller (MVC)** pattern. It has **6 intentional
-bugs**. Your job: find them, fix them, and submit a pull request.
+This time the program is built
+with the **Model-View-Controller (MVC)** pattern. Your job: find them, fix them, and submit a pull request.
 
 ---
 
@@ -86,29 +85,11 @@ java CanteenApp
 
 ---
 
-## 3. The bugs
 
-There are **6 bugs**. One stops the program from compiling; the other five
-make it behave wrongly. Every bug has a `HINT (Bug N)` comment near it -
-but the hint only points at the area, the fix is yours to work out.
-
-| # | Type | Symptom |
-| --- | --- | --- |
-| 1 | Compile error | `javac` fails in `CanteenApp.java` when the Controller is created. |
-| 2 | Logic | The receipt is always empty - orders keep disappearing. |
-| 3 | Logic | The receipt total for 2 Dosas shows Rs.40 instead of Rs.80. |
-| 4 | Logic | The receipt prints the items, but the Grand Total is always Rs.0. |
-| 5 | Logic | Ordering item 1 adds the wrong item, and one menu choice crashes the app. |
-| 6 | Logic | The app quits after the first item instead of running until option 4. |
-
-Tip: some bugs hide others. Fix them in order (1, then 2, ...) and re-run the
-app after each fix.
-
----
 
 ## 4. Expected correct output
 
-After all 6 fixes, a session looks like this:
+
 
 ```
 Welcome to Campus Canteen!
