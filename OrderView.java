@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-// VIEW: everything the user SEES. A View only displays data -
-// it must never change the Model.
 public class OrderView {
 
     public void printMenu(ArrayList<MenuItem> menu) {
@@ -13,10 +11,6 @@ public class OrderView {
         System.out.println("4. Finish and print receipt");
         System.out.print("Enter your choice: ");
     }
-
-    // HINT (Bug 4): Something in this method breaks the MVC rules.
-    // After the receipt prints, the Grand Total always shows Rs.0.
-    // What is the View doing that it should never do?
     public void printReceipt(ArrayList<Order> orders) {
         System.out.println("----- RECEIPT -----");
         for (Order order : orders) {
