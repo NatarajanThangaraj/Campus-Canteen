@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// CONTROLLER: connects the Model and the View. It reads the user's
-// choice, updates the Model, and asks the View to display results.
 public class OrderController {
     private ArrayList<MenuItem> menu;
     private ArrayList<Order> orders;
@@ -24,8 +22,6 @@ public class OrderController {
         return scanner.nextInt();
     }
 
-    // HINT (Bug 6): The app quits after ONE item instead of running
-    // until the user picks 4. Check what this method really says.
     public boolean isFinished(int choice) {
         return choice != 4;
     }
@@ -33,12 +29,7 @@ public class OrderController {
     public void takeOrder(int choice) {
         System.out.print("Enter quantity: ");
         int quantity = scanner.nextInt();
-        // HINT (Bug 5): The user picked item number `choice`, but the
-        // wrong item gets added (and one choice crashes the app).
-        // Remember: menu option 1 is at index 0 of the ArrayList.
         MenuItem picked = menu.get(choice);
-        // HINT (Bug 2): Every order seems to disappear - the receipt is
-        // always empty. Look closely at WHICH list the next lines fill.
         ArrayList<Order> orders = new ArrayList<Order>();
         orders.add(new Order(picked, quantity));
         System.out.println("Added: " + picked.getName() + " x " + quantity);
