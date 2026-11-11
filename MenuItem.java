@@ -1,6 +1,4 @@
-// MODEL: a single item on the canteen menu.
-// The Model holds the data and the maths. It knows nothing about
-// the View or the Controller.
+
 public class MenuItem {
     private String name;
     private double price;
