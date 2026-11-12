@@ -1,4 +1,4 @@
-# Campus Canteen
+# Campus Canteen - By Natraj
 
 This time the program is built
 with the **Model-View-Controller (MVC)** pattern. Your job: find them, fix them, and submit a pull request.
